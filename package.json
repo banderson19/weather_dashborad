@@ -1,0 +1,19 @@
+{
+  "name": "weather_dashborad",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/banderson19/weather_dashborad.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/banderson19/weather_dashborad/issues"
+  },
+  "homepage": "https://github.com/banderson19/weather_dashborad#readme"
+}
