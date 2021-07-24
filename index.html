@@ -4,21 +4,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web API</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="input">
+    <div class="container-fluid">
+        <div class="nav secondary text-center">
+            <h3>Weather Api</h3>
+        </div>
+    </div>
+    <div class="input mb-3 ml-4 ">
         <input type="text" class="inputValue" placeholder="City Name">
         <input type="submit" value="Submit" class="submit">
+
+        <div class="col-md-8 ">
+            <div class="d-flex flex-column">
+                <div class="p-2" id="current-weather"><h1>Current Weather</h1></div>
+                <div class="p2"><h1>5 day forecast</h1></div>
+                <div id="five-day" class="row"></div>
+            </div>
+        </div>
     </div>
 
-    <div class="display"> 
-        <h1 class="name"></h1>
-        <p class="temp"></p>
-        <p class="wind"></p>
-        <p class="humidity"></p>
-        <p class="uv_index"></p>
-    </div>
     
     <script src="app.js"></script>
 </body>
