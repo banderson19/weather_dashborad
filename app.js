@@ -55,15 +55,21 @@ const getWeather = () => {
 
 
         for (var i=1; i<6; i++) {
+          var FivedayDiv = $("<div>");
+          FivedayDiv.attr("class","col-2 m-2")
           var TempToNum = parseInt((data.list[i].main.temp)* 9/5 -459);
           var cityTemp = $("<p>").text("Temp: " + TempToNum + " °F")
-          $("#five-day").append(cityTemp);
           var cityHum = $("<p>").text("Humidity: " + data.list[i].main.humidity + " %");
-          $("#five-day").append(cityHum);
           var windSpeed = $("<p>").text("Wind Speed: " + data.list[i].wind.speed + " MPH");
-          $("#five-day").append(windSpeed);
+          
+          
+          FivedayDiv.append(cityTemp);
+          FivedayDiv.append(cityHum);
+          FivedayDiv.append(windSpeed);
+          $("#five-day").append(FivedayDiv);
+          
         }
-        
+
         // var TempetureToNum_1 = parseInt((data.list[1].main.temp)* 9/5 - 459);
         // var cityTemperature_1 = $("<p>").text("Temp: "+ TempetureToNum_1 + " °F");
         // $("#five-day-1").append(cityTemperature_1);
