@@ -195,9 +195,14 @@
   .card-body {
     padding: 2.5%;
     font-size: 1.4rem;
-    height: 400px;
+    height: 200px;
   }
   
+  .five-day-forcast-card {
+    padding: 2.5%;
+    font-size: 1.4rem;
+    height: 200px;
+  }
   /* FORM */
   .form-label,
   .form-input,
