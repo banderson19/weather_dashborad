@@ -1,18 +1,3 @@
-// var button = document.querySelector('.submit')
-// var name = document.querySelector('.name')
-// var temp = document.querySelector('.temp')
-// var wind = document.querySelector('.wind')
-// var humidity = document.querySelector('.humidity')
-// var uvIndex = document.querySelector('.uv_index')
-// button.addEventListener('click', function() {
-//     fetch('https://api.openweathermap.org/data/2.5/forecast?q='+inputValue.value+
-//     '&appid=29faf1cd51c283160a674c23d2eff464')
-//     .then(response => response.json())
-//     .then(data =>  {
-//         console.log(data)
-//     })
-//     .catch(err => alert("No City"))
-// })
 
 const apiKey = "29faf1cd51c283160a674c23d2eff464"
 const inputValue = document.querySelector('.inputValue')
@@ -69,22 +54,6 @@ const getWeather = () => {
           $("#five-day").append(FivedayDiv);
           
         }
-
-        // var TempetureToNum_1 = parseInt((data.list[1].main.temp)* 9/5 - 459);
-        // var cityTemperature_1 = $("<p>").text("Temp: "+ TempetureToNum_1 + " °F");
-        // $("#five-day-1").append(cityTemperature_1);
-        // var cityHumidity_1 = $("<p>").text("Humidity: "+ data.list[1].main.humidity + " %");
-        // $("#five-day-1").append(cityHumidity_1);
-        // var cityWindSpeed = $("<p>").text("Wind Speed: "+ data.list[1].wind.speed + " MPH");
-        // $("#five-day-1").append(cityWindSpeed);
-
-        // var TempetureToNum_2 = parseInt((data.list[2].main.temp)* 9/5 - 459);
-        // var cityTemperature_2 = $("<p>").text("Temp: "+ TempetureToNum_2 + " °F");
-        // $("#five-day-2").append(cityTemperature_2);
-        // var cityHumidity_2 = $("<p>").text("Humidity: "+ data.list[2].main.humidity + " %");
-        // $("#five-day-2").append(cityHumidity_2);
-        // var cityWindSpeed = $("<p>").text("Wind Speed: "+ data.list[2].wind.speed + " MPH");
-        // $("#five-day-2").append(cityWindSpeed);
 
     })
 }
